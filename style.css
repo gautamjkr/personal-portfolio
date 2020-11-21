@@ -253,9 +253,13 @@ footer p {
         display: block;
         margin-left: 20px;  
     }
+    
+    .nav-link {
+        font-size: x-large;
+    }
 
     .welcome-section {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .contact-me p {
