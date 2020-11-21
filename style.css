@@ -257,6 +257,10 @@ footer p {
     .nav-link {
         font-size: x-large;
     }
+    
+    .h1 {
+        font-size: 3.8rem
+    }
 
     .welcome-section {
         padding-top: 80px;
