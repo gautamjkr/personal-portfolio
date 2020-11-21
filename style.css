@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 119, 109);
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: monospace;
+}
+
+.welcome-section p {
+    font-size: 2rem;
+    color: yellowgreen;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.welcome-section div {
+    font-size: 1.5rem;
+    color: yellowgreen;
+}
+
+.welcome-section li {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;   
+}
+
+a {
+    font-size: larger;
+    font-family: monospace;
+    font-weight: bolder;
+    color: cyan;
+    text-decoration: unset;
+}
+
+/* To make the HTML code (< />) invisible in the project tile */
+span {
+    color: black;
+}
+
+.nav-link {
+    font-size: xx-large; 
+    margin-right: 20px;
+    color: white; 
+    text-transform: uppercase;
+    text-decoration: unset; 
+}
+
+.nav-link:hover {
+    animation-name: change;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.nav-link:focus {
+    outline: dashed yellow 3px;
+}
+
+@keyframes change {
+    0% {
+        color: yellow;
+    }
+
+    100% {
+        color: cyan ;
+    }
+
+}
+
+.project-section {
+    padding-top: 60px;
+    background-color: crimson;
+}
+
+.project-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: monospace;
+    color: white;
+}
+
+.all-projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.project-tile {
+    background-color: black;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    z-index: 2;
+}
+
+.project-tile:hover img {
+    opacity: 1;
+}
+
+.project-tile:hover span {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.project-link:focus {
+    outline: dashed yellow 4px;
+}
+
+.project-link {
+    text-decoration: unset;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-tile img {
+    width: 350px;
+    height: 380px;
+    opacity: 0.9;
+    border: solid black 3px;
+}
+
+.project-name {
+    padding-bottom: 25px;
+    margin-bottom: 0;
+}
+
+.contact-me {
+    width: 100%;
+    height: 500px; 
+    padding-top: 150px;
+    background-color: #303781;
+    line-height: 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 80px;
+}
+
+.contact-me h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.contact-me p {
+    text-align: center;
+    text-justify: newspaper;
+    font-size: 2.5rem; 
+    font-family: monospace;  
+    color: white;
+}
+
+.contact-link:hover #profile-link {
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+    transition: ease;
+}
+
+.contact-link:hover {
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+
+.contact-link a:focus {
+    outline: solid black 3px;
+    
+}
+
+@keyframes enlarge {
+    100% {
+        transform: scale(1.2);
+        color: cyan;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    padding: 8px 0;
+}
+
+footer p {
+    font-size: large;
+    color: white;
+    
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link:focus {
+    text-decoration: underline;
+}
+
+#profile-link {
+    color: white;
+    text-decoration: unset;
+}
+
+@media (max-width: 650px) {
+  
+    .contact-me {
+        line-height: 1.4rem;
+    }
+
+    .contact-me h2 {
+        font-size: 3rem;
+    }
+
+    .contact-me p {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .social-media {
+        display: block;
+        margin-left: 20px;  
+    }
+
+    .welcome-section {
+        padding-top: 100px;
+    }
+
+    .contact-me p {
+        font-size: 1.5rem;
+    }
+}
