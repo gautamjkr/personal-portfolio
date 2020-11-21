@@ -263,7 +263,11 @@ footer p {
     }
 
     .welcome-section {
-        padding-top: 80px;
+        padding-top: 50px;
+    }
+    
+    .welcome-section p {
+        font-size: 1.9rem;
     }
 
     .contact-me p {
